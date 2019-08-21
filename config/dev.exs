@@ -68,9 +68,9 @@ config :phoenix, :plug_init_mode, :runtime
 
 # Configure your database
 config :clan_calendar, ClanCalendar.Repo,
-  username: System.get_env("PGUSER")      || "postgres",
-  password: System.get_env("PGPASSWORD")  || "postgres",
-  database: System.get_env("PGDATABASE")  || "clan_calendar_dev",
-  hostname: System.get_env("PGHOST")      || "localhost",
+  username: "postgres",
+  password: "postgres",
+  database: "clan_calendar_dev",
+  hostname: "localhost",
   pool_size: 10
 
